@@ -20,7 +20,7 @@ const text = [
     const value = parseInt( quantity.value);
     const random = Math.floor(Math.random() * text.length);
 
-    if(isNaN(value) || value < 0 || value > 9) {
+    if(isNaN(value) || value < 0 || value > 9 || value == 1) {
       result.innerHTML = `<p class ="result align="center">${text[random]}</p><br>`;
     }
     else{
